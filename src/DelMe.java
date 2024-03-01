@@ -4,11 +4,12 @@ import java.util.*;
 public class DelMe {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Remove the duplicate words from string
 		String str = "Jai Shree Ganesh 121 Jai Shree Ram 108";
 		Set<String> set = new HashSet<>();
-		List<String> list = new ArrayList<>();
 		String[] sa = str.split(" ");
+		//Adding the set values in list because Collections.sort does not work on the SET
+		List<String> list = new ArrayList<>();
 		for (int i = 0; i < sa.length; i++) {
 			set.add(sa[i]);
 		}
